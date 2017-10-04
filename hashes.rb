@@ -18,10 +18,10 @@ for purchase in purchases
     #Does the company name key already exist in the report dictionary?
     if aggPurchases.has_key?(stocks[purchase[0]])                
         #If it does, update the total valuation
-        aggPurchases[stocks[purchase[0]]] += total;
+        aggPurchases[stocks[purchase[0]]] += total
     else                
         #If not, add the new key and set its value
-        aggPurchases[stocks[purchase[0]]] =  total;
+        aggPurchases[stocks[purchase[0]]] =  total
     end     
 end
 
