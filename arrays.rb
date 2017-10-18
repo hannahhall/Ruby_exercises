@@ -17,3 +17,12 @@ puts "\nRocky Planet"
 for planet in rockyPlanets do
     puts planet
 end
+
+@words = ["abcg", "def"]
+def longest
+    longest_word = @words.inject do |memo, word| 
+        memo.length > word.length ? memo : word
+    end
+    puts longest_word
+end
+longest
