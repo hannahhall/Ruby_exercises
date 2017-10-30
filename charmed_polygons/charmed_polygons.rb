@@ -38,7 +38,7 @@ class CharmedPolygon
         @container.each do |inner|
             row = "| "
             inner.each do |num|
-                row += '%2.2s' % num + " | "
+                row += '%2s' % num + " | "
             end
             output += row + "\n" + border
         end
